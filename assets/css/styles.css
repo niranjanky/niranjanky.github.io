@@ -459,6 +459,7 @@ img{
     margin-right: auto;
   }
   .home__img{
-    right: 10%;
+    right: 5%;
+    padding-bottom:10%;
   }
 }
