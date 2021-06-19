@@ -301,8 +301,8 @@ img{
 .skills__js{
   width: 65%;
 }
-.skills__ux{
-  width: 85%;
+.skills__asp{
+  width: 55%;
 }
 .skills__linux{
   width: 60%;
@@ -310,12 +310,10 @@ img{
 .skills__python{
   width: 50%;
 }
-.skills__nodejs{
-  width: 45%;
+.skills__csharp{
+  width: 50%;
 }
-.skills__django{
-  width: 40%;
-}
+
 .skills__img{
   border-radius: .5rem;
 }
