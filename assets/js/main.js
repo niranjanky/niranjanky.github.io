@@ -41,6 +41,7 @@ sr.reveal('.home__social-icon',{ interval: 200});
 
 /*SCROLL ABOUT*/
 sr.reveal('.about__img',{}); 
+sr.reveal('.exp__img',{}); 
 sr.reveal('.about__subtitle',{delay: 400}); 
 sr.reveal('.about__text',{delay: 400}); 
 
@@ -115,3 +116,37 @@ var TxtRotate = function(el, toRotate, period) {
     document.body.appendChild(css);
   };
 
+//Theme Switcher
+const toggleSwitch = document.querySelector('input[type="checkbox"]');
+
+function switchTheme(e) {
+    if (e.target.checked) {
+        document.documentElement.setAttribute('data-theme', 'dark');
+    }
+    else {
+        document.documentElement.setAttribute('data-theme', 'light');
+    }    
+}
+
+toggleSwitch.addEventListener('change', switchTheme, false)
+// Store the current theme 
+function switchTheme(e) {
+  if (e.target.checked) {
+      document.documentElement.setAttribute('data-theme', 'dark');
+      localStorage.setItem('theme', 'dark'); //add this
+  }
+  else {
+      document.documentElement.setAttribute('data-theme', 'light');
+      localStorage.setItem('theme', 'light'); //add this
+  }    
+}
+//check for saved theme settings
+const currentTheme = localStorage.getItem('theme') ? localStorage.getItem('theme') : null;
+
+if (currentTheme) {
+    document.documentElement.setAttribute('data-theme', currentTheme);
+
+    if (currentTheme === 'dark') {
+        toggleSwitch.checked = true;
+    }
+}
