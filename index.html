@@ -9,7 +9,7 @@
 
         <!-- =====BOX ICONS===== -->
         <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
-         <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
         <title>Niranjan Kumar</title>
     </head>
@@ -29,7 +29,15 @@
                         <li class="nav__item"><a href="#education" class="nav__link">Education</a></li>
                         <li class="nav__item"><a href="#project" class="nav__link">Project</a></li>
                         <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
-                        <!-- <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li> -->
+                        <li class="nav__item">
+                            <input type="checkbox" class="checkbox" id="check" />
+                                <label class="label" for="check">
+                                    <i class="bx bx-sun"></i>
+                                    <i class="bx bxs-moon"></i>
+                                    <div class="ball"></div>
+                                </label>
+
+                        </li>
                     </ul>
                 </div>
 
@@ -43,11 +51,11 @@
             <!--===== HOME =====-->
             <section class="home bd-grid" id="home">
                 <div class="home__data">
-                    <h1 class="home__title">Hi,<br>I'am <span class="home__title-color">Niranjan</span><br> $>
+                    <h1 class="home__title">Hi,<br>I'm <span class="home__title-color">Niranjan</span><br> $>
                         <span
                             class="txt-rotate"
                             data-period="2000"
-                            data-rotate='[ "Web Developer", ".NET Developer", "Django Developer", "Bug Bounty Hunter", "Linux Administrator" ]'>
+                            data-rotate='[ "Web Developer", ".NET Developer", "Bug Bounty Hunter", "Linux Administrator" ]'>
                         </span>
                     </h1>
 
@@ -61,7 +69,7 @@
                 </div>
 
                 <div class="home__img">    
-                    <img src="assets/img/image.jpeg" alt="">
+                    <img src="assets/img/working-dev.png" alt="">
                 </div>
             </section>
 
@@ -75,11 +83,13 @@
                     </div>
                     
                     <div>
-                        <h2 class="about__subtitle">I'am Niranjan Kumar</h2>
-                        <p class="about__text">A Software Engineer graduated from ACS College of Engineering in 2020 with 7 CGPA.And my career objective is to secure a entry level position in a reputable organization to expand my learnings, knowledge, and skills.
-                        Secure a responsible career opportunity to fully utiliize my training and skills, while making a significant
-                        contribution to the success of the company. Seeking an entry-level position to begin my career in a high-level
-                        professional environment.</p>           
+                        <h2 class="about__subtitle">I'm Niranjan Kumar</h2>
+                        <p class="about__text">Wait 🤔 why am I explaining like some pickup sentence from the cheap 
+                            website well I'm a middle-class programmer👨🏻‍💻 with the help of <img src="./assets/img/stackoverflow.png" class="stackoverflow__icon"></img> this buddy.
+                             I got manufactured from ACS college of engineering 🏫 with a benchmark score of 7.0 CGPA.
+                             I'm always excited to get the latest update with the trending technology.
+                              And in my free time, I use to give hard time for my GPU and waste some bandwidth on JioSaavn.com, 
+                              and I also like to stretch my parts in 🌄 like some weird name poses🧘🏻‍♂️. well that's it about me </p>           
                     </div>                                   
                 </div>
             </section>
@@ -89,7 +99,7 @@
                 <h2 class="section-title">Experience</h2>
 
                 <div class="about__container bd-grid experience-timeline">
-                    <div class="about__img">
+                    <div class="exp__img">
                         <img src="assets/img/ssdb.png" alt="">
                     </div>
                     
@@ -101,7 +111,7 @@
                 </div>
 
                 <div class="about__container bd-grid experience-timeline">
-                    <div class="about__img">
+                    <div class="exp__img">
                         <img src="assets/img/certificate.jpg" alt="">
                     </div>
                     
@@ -166,7 +176,6 @@
                 <div class="skills__container bd-grid">          
                     <div>
                         <h2 class="skills__subtitle">Professional Skills</h2>
-                        <p class="skills__text">During my academic period I was very excited about learning new things in the Software Engineering field. And apart from my study carriculum I was very much interested in Bug Bounty Hunting and Yoga, Swimming, Video Games.</p>
                         <div class="skills__data">
                             <div class="skills__names">
                                 <i class='bx bxl-html5 skills__icon'></i>
@@ -205,6 +214,18 @@
                         </div>
                         <div class="skills__data">
                             <div class="skills__names">
+                                <i class='fab fa-linux skills__icon'></i>
+                                <span class="skills__name">Linux Admin</span>
+                            </div>
+                            <div class="skills__bar skills__linux">
+
+                            </div>
+                            <div>
+                                <span class="skills__percentage">60%</span>
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
                                 <i class='bx  skills__icon'></i>
                                 <span class="skills__name">ASP.NET MVC</span>
                             </div>
@@ -217,7 +238,7 @@
                         </div>
                         <div class="skills__data">
                             <div class="skills__names">
-                                <i class='bx bxl-python skills__icon'></i>
+                                <i class='fab fa-python skills__icon'></i>
                                 <span class="skills__name">Python</span>
                             </div>
                             <div class="skills__bar skills__python">
@@ -239,23 +260,12 @@
                                 <span class="skills__percentage">50%</span>
                             </div>
                         </div>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxl-tux skills__icon'></i>
-                                <span class="skills__name">Linux Admin</span>
-                            </div>
-                            <div class="skills__bar skills__linux">
-
-                            </div>
-                            <div>
-                                <span class="skills__percentage">60%</span>
-                            </div>
-                        </div>
+                        
                         
                     </div>
                     
                     <div>              
-                        <img src="assets/img/work3.jpg" alt="" class="skills__img">
+                        <img src="assets/img/dev.png" alt="" class="skills__img">
                     </div>
                 </div>
             </section>
@@ -286,7 +296,7 @@
                 <a href="https://twitter.com/Niranjan_K_N_" class="footer__icon"><i class='bx bxl-twitter' ></i></a>
                 <a href="https://linkedin.com/in/red-dot" class="footer__icon"><i class='bx bxl-linkedin' ></i></a>
             </div>
-            <p>&#169; 2021 copyright all right reserved</p>
+            <p>Made with <i class='fas fa-heart red'></i> & lots of ginger <i class='fas fa-mug-hot tea'></i> on weekends.</i></p>
         </footer>
 
 
