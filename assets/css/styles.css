@@ -18,6 +18,7 @@
   --black: #071218;
   --label-color: var(--black);
   --ball-color: var(--white);
+  --button-shadow: rgba(0, 0, 0, .25);
 }
 [data-theme="dark"] {
   --first-color: #10ec91;
@@ -28,6 +29,7 @@
   --footer-font-color:#f3f4f5;
   --label-color: var(--white);
   --ball-color: var(--black);
+  --button-shadow: rgba(16, 218, 154, 0.485);
 }
 /*===== Fuente y tipografia =====*/
 :root{
@@ -258,22 +260,23 @@ img{
 .button{
   display: inline-block;
   background-color: var(--first-color);
-  color: #fff;
+  color:var(--ball-color);
   padding: .75rem 2.5rem;
   font-weight: var(--font-semi);
   border-radius: .5rem;
 }
 .button:hover{
-  box-shadow: 0 10px 36px rgba(0,0,0,.15);
+  box-shadow: 0 10px 36px var(--button-shadow);
 }
 
 /* ===== ABOUT =====*/
 .about__container{
   row-gap: 2rem;
   text-align: center;
+  margin-top: var(--mb-2);
 }
 .about__subtitle{
-  margin-bottom: var(--mb-2);
+  margin-bottom: var(--mb-1);
 }
 .about__img{
   justify-self: center;
@@ -333,22 +336,22 @@ img{
   width: 95%;
 }
 .skills__css{
-  width: 85%;
-}
-.skills__js{
-  width: 65%;
-}
-.skills__asp{
-  width: 55%;
-}
-.skills__linux{
   width: 60%;
 }
+.skills__js{
+  width: 85%;
+}
+.skills__asp{
+  width: 85%;
+}
+.skills__linux{
+  width: 40%;
+}
 .skills__python{
-  width: 50%;
+  width: 40%;
 }
 .skills__csharp{
-  width: 50%;
+  width: 80%;
 }
 
 .skills__img{
@@ -388,6 +391,7 @@ img{
   border: none;
   outline: none;
   font-size: var(--normal-font-size);
+  color: var(--ball-color);
   cursor: pointer;
   margin-left: auto;
 }
